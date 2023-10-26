@@ -13,4 +13,4 @@ def birthday(x):
             allcnt+=1
     prcnt=(allcnt/x)*100
     return prcnt
-print(birthday(1000))
+print(f'Процент совпадения дней рождения = {birthday(1000)}%')

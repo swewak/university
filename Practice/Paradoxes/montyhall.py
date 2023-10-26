@@ -20,7 +20,8 @@ def monty_hall(amount):
             if 6-door1-door2==prize:
                 cnt2+=1
                 allcnt+=1
-    percent1=(cnt1/allcnt)*100
-    percent2 = (cnt2/allcnt)*100
-    return allcnt,percent1,percent2
-print(monty_hall(100000))
+    percent1=int((cnt1/allcnt)*100)
+    percent2 = int((cnt2/allcnt)*100)
+    return percent1,percent2
+print(f'Процент побед первой дверью = {monty_hall(100000)[0]}%')
+print(f'Процент побед дверью ведущего = {monty_hall(100000)[1]}%')
