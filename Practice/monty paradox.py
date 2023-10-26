@@ -1,6 +1,6 @@
 import random
 
-def prdx(amount):
+def monty_hall(amount):
     cnt1 = 0
     cnt2 = 0
     allcnt = 0
@@ -23,5 +23,4 @@ def prdx(amount):
     percent1=(cnt1/allcnt)*100
     percent2 = (cnt2/allcnt)*100
     return allcnt,percent1,percent2
-print(prdx(100000))
-#     математики правы :-))))
+print(monty_hall(100000))
