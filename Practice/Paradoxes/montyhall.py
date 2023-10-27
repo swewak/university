@@ -1,6 +1,5 @@
 import random
-
-def monty_hall(amount):
+def monty_hall(amount:int=10000):
     cnt1 = 0
     cnt2 = 0
     allcnt = 0
@@ -23,5 +22,3 @@ def monty_hall(amount):
     percent1=int((cnt1/allcnt)*100)
     percent2 = int((cnt2/allcnt)*100)
     return percent1,percent2
-print(f'Процент побед первой дверью = {monty_hall(100000)[0]}%')
-print(f'Процент побед дверью ведущего = {monty_hall(100000)[1]}%')
